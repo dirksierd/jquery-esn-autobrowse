@@ -96,7 +96,7 @@ jQuery.fn.autobrowse = function (options)
     return this.each( function ()
     {
         var localData, obj = jQuery(this);
-        var currentOffset = options.offset;
+        window.currentOffset = options.offset;
         var loading = false;
         var scrollTopUpdateTimer = null;
 		var stopping = false;
